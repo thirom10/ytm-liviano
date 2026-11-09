@@ -1,0 +1,25 @@
+# Rust
+/target
+**/*.rs.bk
+
+# Credenciales y sesión (NUNCA al repo)
+cookies.txt
+headers.json
+oauth.json
+browser.json
+*.cookies
+.env
+secrets/
+
+# Binarios de terceros (se descargan aparte)
+yt-dlp
+yt-dlp.exe
+mpv-2.dll
+libmpv*.dll
+libmpv*.so*
+
+# Editor / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
