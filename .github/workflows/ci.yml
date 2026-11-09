@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    # Primero solo Windows (decisión del plan); Linux se agrega después.
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compilar
+        run: cargo build --locked
+      - name: Tests
+        run: cargo test --locked
