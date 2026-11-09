@@ -6,7 +6,11 @@
 
 mod audio;
 mod config;
+// `allow(dead_code)` es temporal: la cola y `Pista` todavía no se usan desde
+// `main`, y sin esto el compilador avisa "código sin usar". Se quita en el paso 6.
+#[allow(dead_code)]
 mod queue;
+#[allow(dead_code)]
 mod search;
 mod stream;
 mod ui;
