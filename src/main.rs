@@ -12,6 +12,7 @@ mod config;
 mod queue;
 #[allow(dead_code)]
 mod search;
+#[allow(dead_code)]
 mod stream;
 mod ui;
 
