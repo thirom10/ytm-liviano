@@ -4,6 +4,7 @@
 // `src/<nombre>.rs`. Por ahora todos están vacíos; se irán llenando paso a paso
 // (ver docs/PLAN.md).
 
+#[allow(dead_code)]
 mod audio;
 mod config;
 // `allow(dead_code)` es temporal: la cola y `Pista` todavía no se usan desde
